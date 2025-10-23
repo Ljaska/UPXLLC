@@ -24,16 +24,73 @@
       }
     }
   </script>
-  <style>
-    html,body{height:100%} body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial;background:#0A0A0A}
-    .glass{backdrop-filter:saturate(140%) blur(16px);background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08)}
-    .beam{position:fixed;left:0;top:0;height:2px;width:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);animation:sweep 7s linear infinite}
+    <style>
+    html,body{height:100%}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial;
+      background:#0A0A0A;
+      color:#fff;
+    }
+    :root{
+      --accent1:#E56A2E;
+      --accent2:#FF8A3C;
+    }
+    .glass{
+      backdrop-filter:saturate(140%) blur(16px);
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+    }
+    .beam{
+      position:fixed;left:0;top:0;height:2px;width:100%;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);
+      animation:sweep 7s linear infinite;
+    }
     @keyframes sweep{from{transform:translateX(-30%)}to{transform:translateX(130%)}}
     .hero{position:relative;overflow:hidden}
-    .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(1200px 500px at 20% 80%, rgba(255,255,255,.10), transparent 60%), radial-gradient(900px 400px at 90% 10%, rgba(255,255,255,.06), transparent 60%)}
-    .stripe{height:3px;background:linear-gradient(90deg, rgba(255,255,255,.65), rgba(255,255,255,.15));filter:blur(.2px);box-shadow:0 0 22px rgba(255,255,255,.14)}
-    .btn{transition:transform .15s ease, box-shadow .15s ease} .btn:hover{transform:translateY(-1px)} .btn:active{transform:translateY(0)}
+    .hero::after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:
+        radial-gradient(1200px 500px at 20% 80%,rgba(255,138,60,.10),transparent 60%),
+        radial-gradient(900px 400px at 90% 10%,rgba(255,255,255,.06),transparent 60%);
+    }
+    .stripe{
+      height:3px;
+      background:linear-gradient(90deg,rgba(255,138,60,.6),rgba(255,138,60,.15));
+      filter:blur(.2px);
+      box-shadow:0 0 22px rgba(255,138,60,.25);
+    }
+    .btn{
+      transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
+      font-weight:600;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn:active{transform:translateY(0)}
+    /* main orange buttons */
+    .btn-primary{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#fff;
+      border:none;
+      box-shadow:0 0 20px rgba(255,138,60,.25);
+    }
+    .btn-primary:hover{
+      box-shadow:0 0 35px rgba(255,138,60,.45);
+    }
+    /* outline buttons */
+    .btn-outline{
+      border:1px solid rgba(255,255,255,.15);
+      color:#fff;
+    }
+    .btn-outline:hover{
+      background:rgba(255,255,255,.05);
+      border-color:rgba(255,138,60,.4);
+      color:var(--accent2);
+    }
+    /* under-truck glow */
+    .truck-glow{
+      filter:drop-shadow(0 0 60px rgba(255,138,60,.25));
+    }
   </style>
+
 </head>
 <body class="text-white antialiased selection:bg-white/10">
   <div class="beam"></div>
@@ -74,8 +131,9 @@
           <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05]">Elite U.S. Freight & Logistics</h1>
           <p class="mt-6 text-lg text-white/70">FTL & LTL. Expedited linehaul. Dedicated lanes. Cross-dock & warehousing. Discipline, precision, and presence behind every mile.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#quote" class="btn px-6 py-3 rounded-2xl bg-white text-black font-semibold shadow-glow">Request Quote</a>
-            <a href="#services" class="btn px-6 py-3 rounded-2xl border border-white/15 hover:bg-white/5">View Services</a>
+<a href="#quote" class="btn btn-primary px-6 py-3 rounded-2xl">Request Quote</a>
+<a href="#services" class="btn btn-outline px-6 py-3 rounded-2xl">View Services</a>
+
           </div>
           <div class="mt-8 grid grid-cols-2 gap-6 text-sm text-white/70">
             <div class="glass rounded-2xl p-4">FTL · LTL · Expedited</div>

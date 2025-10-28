@@ -1,0 +1,18 @@
+# ==========================
+# UPX LLC — The Power Behind Every Mile
+# robots.txt (SEO & crawler access)
+# ==========================
+
+User-agent: *
+Disallow:
+
+# Allow full crawling, but block admin or temp areas (if added in future)
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap for search engines
+Sitemap: https://upxllc.com/sitemap.xml
+
+# Site info
+Host: upxllc.com

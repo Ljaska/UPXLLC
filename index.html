@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>UPX LLC — The Power Behind Every Mile.</title>
+  <meta name="description" content="UPX LLC — premium U.S. freight & logistics. FTL, LTL, expedited, dedicated lanes. The Power Behind Every Mile."/>
+  <meta name="theme-color" content="#0A0A0A"/>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="UPX LLC — The Power Behind Every Mile.">
+  <meta property="og:description" content="Premium U.S. freight & logistics. Dedicated lanes, FTL, LTL, expedited, warehousing.">
+  <meta property="og:image" content="https://upxllc.com/preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://upxllc.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-512.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<meta name="theme-color" content="#0A0A0A">
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: {900:'#0A0A0A',800:'#0D0D0D',700:'#111111',600:'#161616',500:'#1A1A1A'},
+            steel:{500:'#E6E6E6',400:'#CFCFCF',300:'#B3B3B3',200:'#8C8C8C'}
+          },
+          boxShadow:{glow:'0 8px 40px rgba(255,255,255,0.06)'},
+          fontFamily:{sans:['Inter','system-ui','-apple-system','Segoe UI','Roboto','Ubuntu','Cantarell','Helvetica Neue','Arial']}
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html,body{height:100%}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial;
+      background:#0A0A0A;color:#fff;
+    }
+    :root{--accent1:#E56A2E;--accent2:#FF8A3C;}
+    .glass{backdrop-filter:saturate(140%) blur(16px);
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);}
+    .beam{position:fixed;left:0;top:0;height:2px;width:100%;
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);
+      animation:sweep 7s linear infinite;}
+    @keyframes sweep{from{transform:translateX(-30%)}to{transform:translateX(130%)}}
+    .hero{position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+      background:radial-gradient(1200px 500px at 20% 80%,rgba(255,138,60,.10),transparent 60%),
+      radial-gradient(900px 400px at 90% 10%,rgba(255,255,255,.06),transparent 60%);}
+    .stripe{height:3px;
+      background:linear-gradient(90deg,rgba(255,138,60,.6),rgba(255,138,60,.15));
+      filter:blur(.2px);box-shadow:0 0 22px rgba(255,138,60,.25);}
+    .btn{transition:transform .15s ease, box-shadow .15s ease, background .2s ease;font-weight:600;}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#fff;border:none;box-shadow:0 0 20px rgba(255,138,60,.25);}
+    .btn-primary:hover{box-shadow:0 0 35px rgba(255,138,60,.45);}
+    .btn-outline{border:1px solid rgba(255,255,255,.15);color:#fff;}
+    .btn-outline:hover{background:rgba(255,255,255,.05);border-color:rgba(255,138,60,.4);color:var(--accent2);}
+  </style>
+</head>
+
+<body class="text-white antialiased selection:bg-white/10">
+  <div class="beam"></div>
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-40">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-baseline gap-3">
+          <div class="text-2xl font-black tracking-tight">UPX LLC</div>
+          <div class="text-xs uppercase tracking-widest text-white/50">The Power Behind Every Mile.</div>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
+          <a class="hover:text-white" href="#services">Services</a>
+          <a class="hover:text-white" href="#coverage">Coverage</a>
+          <a class="hover:text-white" href="#contact">Contact</a>
+          <a class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 btn" href="#quote">Request Quote</a>
+        </nav>
+        <button id="mobileBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-[#0D0D0D]/85 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 py-3 grid gap-2 text-sm">
+        <a class="py-2" href="#services">Services</a>
+        <a class="py-2" href="#coverage">Coverage</a>
+        <a class="py-2" href="#contact">Contact</a>
+        <a class="py-2" href="#quote">Request Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero pt-28 md:pt-36 pb-20 md:pb-24">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[1.05]">Elite U.S. Freight & Logistics</h1>
+          <p class="mt-6 text-lg text-white/70">FTL & LTL. Expedited linehaul. Dedicated lanes. Cross-dock & warehousing. Discipline, precision, and presence behind every mile.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#quote" class="btn btn-primary px-6 py-3 rounded-2xl">Request Quote</a>
+            <a href="#services" class="btn btn-outline px-6 py-3 rounded-2xl">View Services</a>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-6 text-sm text-white/70">
+            <div class="glass rounded-2xl p-4">FTL · LTL · Expedited</div>
+            <div class="glass rounded-2xl p-4">Cross-dock · Warehousing</div>
+            <div class="glass rounded-2xl p-4">Real-time updates</div>
+            <div class="glass rounded-2xl p-4">24/7 dispatch</div>
+          </div>
+        </div>
+        <div class="hidden md:block flex items-center justify-center">
+          <img src="truck.png" alt="UPX Truck" class="max-w-full object-contain opacity-95">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 md:py-20 border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Services</h2>
+        <p class="text-white/70 max-w-2xl">Focused capacity for what matters. No clutter, no excuses.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <div class="text-xl font-semibold">FTL / Dedicated</div>
+          <p class="mt-2 text-white/70">Direct, secure, on time. Dedicated tractors and 53’ dry vans for your lanes.</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <div class="text-xl font-semibold">LTL / Consolidation</div>
+          <p class="mt-2 text-white/70">Smart consolidation that lowers cost without missing windows.</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <div class="text-xl font-semibold">Expedited</div>
+          <p class="mt-2 text-white/70">Team-driven long-haul and hot shots for time-critical freight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="quote" class="py-16 md:py-20 border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div id="contact">
+          <h2 class="text-3xl md:text-4xl font-extrabold">Contact</h2>
+          <div class="mt-4 text-white/80">
+            Email: <a href="mailto:upx@upxllc.com" class="underline decoration-white/30 underline-offset-4 hover:decoration-white">upx@upxllc.com</a>
+          </div>
+          <div class="mt-8 glass rounded-3xl p-6 border-white/10">
+            <div class="text-white/80 font-semibold">Compliance & Safety</div>
+            <ul class="mt-3 text-white/70 grid gap-2 text-sm">
+              <li>• ELD compliant & driver coaching</li>
+              <li>• Insurance certificates on file</li>
+              <li>• Clean DOT inspections and records</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold">Request a Quote</h3>
+          <form class="mt-6 grid gap-4 glass rounded-3xl p-6 border-white/10" onsubmit="event.preventDefault(); alert('Thanks! Your request was captured (demo).');">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Company"/>
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Your name"/>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Email"/>
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Phone (optional)"/>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Origin city/state"/>
+              <input class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" placeholder="Destination city/state"/>
+            </div>
+            <textarea class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 h-28 outline-none focus:ring-2 focus:ring-white/20" placeholder="Commodity, weight, equipment, dates"></textarea>
+            <button class="mt-2 px-6 py-3 rounded-2xl btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-4 text-sm text-white/60">
+      <div>© <span id="y"></span> UPX LLC. All rights reserved.</div>
+      <div>Pure Black Edition.</div>
+    </div>
+  </footer>
+
+  <script>
+    const b=document.getElementById('mobileBtn');
+    const m=document.getElementById('mobileMenu');
+    if(b){b.addEventListener('click',()=>m.classList.toggle('hidden'))}
+    document.getElementById('y').textContent=(new Date()).getFullYear();
+  </script>
+</body>
+</html>
